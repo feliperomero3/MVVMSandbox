@@ -2,7 +2,7 @@
 
 namespace MVVMSandbox.Model
 {
-    class Artist
+    public class Artist
     {
         public string Name { get; set; }
     }

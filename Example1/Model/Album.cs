@@ -1,6 +1,6 @@
 ﻿namespace MVVMSandbox.Model
 {
-    class Album
+    public class Album
     {
         public string Name { get; set; }
         public int Year { get; set; }
