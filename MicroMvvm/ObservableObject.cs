@@ -28,7 +28,7 @@ namespace MicroMvvm
             this.RaisePropertyChanged(propertyName);
         }
 
-        protected void RaisePropertyChanged(String propertyName)
+        protected void RaisePropertyChanged(string propertyName)
         {
             VerifyPropertyName(propertyName);
             OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
@@ -40,7 +40,7 @@ namespace MicroMvvm
         /// </summary>
         [Conditional("DEBUG")]
         [DebuggerStepThrough]
-        public void VerifyPropertyName(String propertyName)
+        public void VerifyPropertyName(string propertyName)
         {
             // verify that the property name matches a real,  
             // public, instance property on this Object.

@@ -65,12 +65,12 @@ namespace MicroMvvm
         }
 
         [DebuggerStepThrough]
-        public Boolean CanExecute(Object parameter)
+        public bool CanExecute(object parameter)
         {
             return _canExecute == null ? true : _canExecute((T)parameter);
         }
 
-        public void Execute(Object parameter)
+        public void Execute(object parameter)
         {
             _execute((T)parameter);
         }
@@ -86,7 +86,7 @@ namespace MicroMvvm
 
         #region Declarations
 
-        readonly Func<Boolean> _canExecute;
+        readonly Func<bool> _canExecute;
         readonly Action _execute;
 
         #endregion
@@ -107,7 +107,7 @@ namespace MicroMvvm
         /// </summary>
         /// <param name="execute">The execution logic.</param>
         /// <param name="canExecute">The execution status logic.</param>
-        public RelayCommand(Action execute, Func<Boolean> canExecute)
+        public RelayCommand(Action execute, Func<bool> canExecute)
         {
 
             if (execute == null)
@@ -137,12 +137,12 @@ namespace MicroMvvm
         }
 
         [DebuggerStepThrough]
-        public Boolean CanExecute(Object parameter)
+        public bool CanExecute(object parameter)
         {
             return _canExecute == null ? true : _canExecute();
         }
 
-        public void Execute(Object parameter)
+        public void Execute(object parameter)
         {
             _execute();
         }
