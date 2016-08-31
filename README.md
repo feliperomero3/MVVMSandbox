@@ -1,7 +1,7 @@
 ### About
 
 Simple demo showcasing the MVVM pattern using basic building blocks such as `ObservableObject <INotifyPropertyChanged>` and `RelayCommand <ICommand>` 
-provided by [MicroMvvm project](#dep).
+provided by MicroMvvm project.
 
 
 ### Project file structure
@@ -40,7 +40,7 @@ The view models are stored in the same location in the ViewModel directory as th
 2. Append *View* to Views.
 3. Append *ViewModel* to ViewModels.
 
-<a name="dep">### Definitions</a>
+### Definitions
 
 - **View**: Represents the UI.
 - **ViewModel**: Gets the Model to the View.
