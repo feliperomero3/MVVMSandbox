@@ -51,4 +51,6 @@ The view models are stored in the same location in the ViewModel directory as th
 **MicroMvvm** project original author (2012-10-10): Barry Lapthorn  
 *Source*: [Code Project](http://www.codeproject.com/Articles/165368/WPF-MVVM-Quick-Start-Tutorial)
 
-2016-08-30
+### License
+
+MIT License
