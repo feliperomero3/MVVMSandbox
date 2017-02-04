@@ -3,6 +3,7 @@
 Simple demo showcasing the MVVM pattern using basic building blocks such as `ObservableObject <INotifyPropertyChanged>` and `RelayCommand <ICommand>` 
 provided by MicroMvvm project.
 
+**Use Visual Studio 2015 Community Editon to build the solution.**
 
 ### Project file structure
 
@@ -33,7 +34,7 @@ As shown in the list, the name of a view should end with its type:
 
 ### Guidelines & naming style
 
-The name of a view model should be composed of the corresponding viewís name and the word ìModelî. 
+The name of a view model should be composed of the corresponding view‚Äôs name and the word ‚ÄúModel‚Äù. 
 The view models are stored in the same location in the ViewModel directory as their corresponding views in the View directory.
 
 1. Separate folders for Model, View and ViewModel.
