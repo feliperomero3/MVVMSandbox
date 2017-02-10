@@ -64,6 +64,11 @@ namespace MicroMvvm
             }
         }
 
+        public void RaiseCanExecuteChanged()
+        {
+            CommandManager.InvalidateRequerySuggested();
+        }
+
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
@@ -136,6 +141,11 @@ namespace MicroMvvm
             }
         }
 
+        public void RaiseCanExecuteChanged()
+        {
+            CommandManager.InvalidateRequerySuggested();
+        }
+
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
@@ -206,6 +216,11 @@ namespace MicroMvvm
                 if (_canExecute != null)
                     CommandManager.RequerySuggested -= value;
             }
+        }
+
+        public void RaiseCanExecuteChanged()
+        {
+            CommandManager.InvalidateRequerySuggested();
         }
 
         [DebuggerStepThrough]
