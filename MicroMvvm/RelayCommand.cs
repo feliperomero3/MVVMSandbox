@@ -64,11 +64,6 @@ namespace MicroMvvm
             }
         }
 
-        public void RaiseCanExecuteChanged()
-        {
-            CommandManager.InvalidateRequerySuggested();
-        }
-
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
@@ -141,11 +136,6 @@ namespace MicroMvvm
             }
         }
 
-        public void RaiseCanExecuteChanged()
-        {
-            CommandManager.InvalidateRequerySuggested();
-        }
-
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
@@ -155,83 +145,6 @@ namespace MicroMvvm
         public void Execute(object parameter)
         {
             _execute();
-        }
-
-        #endregion
-    }
-
-    /// <summary>
-    /// A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the CanExecute method is 'true'.
-    /// </summary>
-    public class RelayCommandParam : ICommand
-    {
-
-        #region Declarations
-
-        readonly Func<bool> _canExecute;
-        readonly Action<object> _execute;
-
-        #endregion
-
-        #region Constructors
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RelayCommand&lt;T&gt;"/> class and the command can always be executed.
-        /// </summary>
-        /// <param name="execute">The execution logic.</param>
-        public RelayCommandParam(Action<object> execute)
-            : this(execute, null)
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RelayCommand&lt;T&gt;"/> class.
-        /// </summary>
-        /// <param name="execute">The execution logic.</param>
-        /// <param name="canExecute">The execution status logic.</param>
-        public RelayCommandParam(Action<object> execute, Func<bool> canExecute)
-        {
-
-            if (execute == null)
-                throw new ArgumentNullException("execute");
-            _execute = execute;
-            _canExecute = canExecute;
-        }
-
-        #endregion
-
-        #region ICommand Members
-
-        public event EventHandler CanExecuteChanged
-        {
-            add
-            {
-
-                if (_canExecute != null)
-                    CommandManager.RequerySuggested += value;
-            }
-            remove
-            {
-
-                if (_canExecute != null)
-                    CommandManager.RequerySuggested -= value;
-            }
-        }
-
-        public void RaiseCanExecuteChanged()
-        {
-            CommandManager.InvalidateRequerySuggested();
-        }
-
-        [DebuggerStepThrough]
-        public bool CanExecute(object parameter)
-        {
-            return _canExecute == null ? true : _canExecute();
-        }
-
-        public void Execute(object parameter)
-        {
-            _execute(parameter);
         }
 
         #endregion
