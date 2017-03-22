@@ -9,6 +9,8 @@ provided by MicroMvvm project.
 
 All MVVM/XAML applications should have a similiar directory structure. The following tree shows a possible structure.
 
+- App.xaml
+- **Control**: Reusable UI controls (application independent views) without view models.
 - **Model**: Model and domain clasess.
 - **ViewModel**: View models clasess.
     - *Examples*:
