@@ -50,6 +50,10 @@
     <Compile Include="PropertySupport.cs" />
     <Compile Include="RelayCommand.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NuGet\lib\net40\" />
+    <Folder Include="NuGet\lib\net45\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

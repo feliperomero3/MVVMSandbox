@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>Desiem.MicroMvvm</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <version>1.0</version>
+    <title>Desiem.MicroMvvm</title>
+    <authors>feliperomero</authors>
+    <owners>feliperomero</owners>
     <licenseUrl>https://github.com/feliperomero3/MVVMSandbox/blob/master/MicroMvvm/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/feliperomero3/MVVMSandbox/blob/master/MicroMvvm/README.md</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
