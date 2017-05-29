@@ -32,6 +32,12 @@
     <DocumentationFile>
     </DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MicroMvvmKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -53,6 +59,9 @@
   <ItemGroup>
     <Folder Include="NuGet\lib\net40\" />
     <Folder Include="NuGet\lib\net45\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MicroMvvmKey.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
