@@ -1,0 +1,4 @@
+15:21 30/06/2017
+
+Obtenido de repositorio:
+https://github.com/charri/Font-Awesome-WPF.git
