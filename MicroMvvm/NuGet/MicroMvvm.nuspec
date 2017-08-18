@@ -2,14 +2,14 @@
 <package>
   <metadata>
     <id>Desiem.MicroMvvm</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Desiem.MicroMvvm</title>
     <authors>feliperomero</authors>
     <owners>feliperomero</owners>
     <licenseUrl>https://github.com/feliperomero3/MVVMSandbox/blob/master/MicroMvvm/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/feliperomero3/MVVMSandbox/blob/master/MicroMvvm/README.md</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Custom minimal MVVM framework. Uses basic building blocks such as ObservableObject and RelayCommand provided by MicroMvvm project.</description>
+    <description>Custom minimal MVVM framework. Uses basic building blocks such as ObservableObject and RelayCommand.</description>
     <releaseNotes>Initial release as NuGet Package.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Mvvm Wpf</tags>
