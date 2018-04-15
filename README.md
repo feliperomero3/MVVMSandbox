@@ -3,6 +3,10 @@
 Simple demo showcasing the MVVM pattern using basic building blocks such as `ObservableObject <INotifyPropertyChanged>` and `RelayCommand <ICommand>` 
 provided by MicroMvvm project.
 
+### How to use it
+
+[Sample project](/Example1)
+
 **Use Visual Studio 2015 Community Editon to build the solution.**
 
 ### Project file structure
